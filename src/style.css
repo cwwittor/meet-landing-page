@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("./assets/fonts/Red_Hat_Display/RedHatDisplay-VariableFont_wght.ttf");
+}
+
+:root {
+  --color-white: #fafafa;
+  --color-teal: #4d96a9;
+  --color-purple: #855fb1;
+  --color-dark-purple: #28283d;
+  --color-light-blue: #8fe3f9;
+  --color-light-purple: #d9b8ff;
+  --color-grey: #87879d;
+
+  --font-size-heading: 24px;
+
+  --redhat: "Red Hat Display", sans-serif;
+}
+
+body {
+  font-family: var(--redhat);
+}
+
+.white-text {
+  color: var(--color-white);
+}
+
+.heading-image {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0 3rem 0;
+}
+
+.profile-image {
+  max-width: 115%;
+  height: auto;
+}
+
+.heading-text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* NEXT TIME GET THE TEXT SIZES RIGHT FOR EACH MOBILE THING THEN FOCUS ON TOP TO BOTTOM */
