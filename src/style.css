@@ -12,22 +12,86 @@
   --color-light-purple: #d9b8ff;
   --color-grey: #87879d;
 
-  --font-size-heading: 24px;
+  --font-size-heading: 2.5rem;
+  --font-size-paragraph: 1rem;
+  --font-size-s-heading: 2rem;
+  --font-size-w-paragraph: 1.125rem;
+
+  --line-height-header: 2.75rem;
+  --line-height-paragraph: 1.625rem;
+  --line-height-s-header: 2.25rem;
+
+  --font-weight-light: 300;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  --font-weight-bolder: 700;
+
+  --letter-spacing-p-header: 0.25rem;
 
   --redhat: "Red Hat Display", sans-serif;
 }
 
 body {
   font-family: var(--redhat);
+  margin: 0;
 }
 
 .white-text {
   color: var(--color-white);
 }
 
+.grey-text {
+  color: var(--color-grey);
+}
+
+.light-blue-text {
+  color: var(--color-light-blue);
+}
+
+.teal-text {
+  color: var(--color-teal);
+}
+
+.border-circle {
+  position: relative;
+  display: inline-flex;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid var(--color-grey);
+  align-items: center;
+  justify-content: center;
+}
+
+.border-circle::before {
+  content: "";
+  position: absolute;
+  top: -3rem; /* Adjust the length of the line as needed */
+  left: 50%;
+  width: 1px;
+  height: 3rem;
+  background-color: grey;
+  transform: translateX(-50%);
+}
+
+.teal-button {
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  background-color: var(--color-teal);
+  border-radius: 2rem;
+  font-weight: var(--font-weight-bolder);
+}
+
+.purple-button {
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  background-color: var(--color-purple);
+  border-radius: 2rem;
+  font-weight: var(--font-weight-bolder);
+}
+
 .heading-image {
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .logo {
@@ -37,15 +101,53 @@ body {
 }
 
 .profile-image {
-  max-width: 115%;
+  max-width: 110%;
   height: auto;
 }
 
 .heading-text-section {
+  margin: 2rem 1.5rem 1rem 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-/* NEXT TIME GET THE TEXT SIZES RIGHT FOR EACH MOBILE THING THEN FOCUS ON TOP TO BOTTOM */
+.scorpion-mortal-kombat {
+  margin: 0.5rem 0 1rem 0;
+  font-weight: var(--font-weight-medium);
+}
+
+.header-text {
+  margin: 1rem 1.5rem 1rem 1.5rem;
+  font-size: var(--font-size-heading);
+  line-height: var(--line-height-header);
+}
+
+.paragraph-text {
+  font-size: var(--font-size-paragraph);
+  line-height: var(--line-height-paragraph);
+}
+
+.paragraph-w-text {
+  font-size: var(--font-size-w-paragraph);
+  line-height: var(--line-height-paragraph);
+}
+
+.header-s-text {
+  font-size: var(--font-size-s-heading);
+  line-height: var(--line-height-s-header);
+}
+
+.text-spacing {
+  letter-spacing: var(--letter-spacing-p-header);
+}
+
+.button-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* MAYBE CHANGE FROM ABSOLUTE LINE POSITIONING TO INSTEAD HAVE A SEPERATE LINE ELEMENT WITH NO MARGIN ABOVE THE CIRCLE */
