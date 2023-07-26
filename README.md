@@ -51,7 +51,8 @@ Users should be able to:
 
 ### Continued development
 
-In future projects the thing I want to focus on is getting to this finished product faster and I think I can do that through practicing more.
+- In future projects the thing I want to focus on is getting to this finished product faster and I think I can do that through practicing more.
+- COMMIT MORE FREQUENTLY!! I did not commit frequently enough on this project.
 
 ### Useful resources
 
